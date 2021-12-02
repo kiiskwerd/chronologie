@@ -1,0 +1,213 @@
+/* definition */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+@font-face {
+    font-family: 'rofitasteregular';
+    src: url('../fonts/rofitaste-webfont.woff2') format('woff2'),
+         url('../fonts/rofitaste-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body, button {
+    font-family: 'Quicksand', sans-serif;
+    color: #80554D;
+    
+}
+  
+  /* use */  
+    .parallax{
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        perspective: 2px;
+        transform-style: preserve-3d;
+    }
+    
+    .section {
+        position: relative;
+        height: 100vh;
+        overflow-y: hidden;
+    }
+    
+    .content {
+        height: 100vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container {
+        margin: 0, auto;
+        left: 0;
+        right: 0;
+        padding: 50px;
+    }
+    
+    .content_box {
+        height: 80vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .testimonial-container {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .testimonial-1 {
+        background-color: #E4CCC7; 
+    }
+    
+    .testimonial-2 {
+        background-color: #c5c2c1; 
+    }
+    
+    .testimonial-3 {
+        background-color: #b19db7; 
+    }
+    .box-1 div,
+    .box-2 div{
+        /* border: 19px #faf9fe solid; */
+        padding: 45px;
+    }
+    
+    .box_1, .box_2,  .box_3,  .box_4 {
+        flex: 1;
+    }
+    
+    .parallax::after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    
+        transform: translateZ(-1px) scale(1.5);
+        background-size: 100%;
+        z-index: -1;
+    }
+    
+    /* The styling for the static div. */
+    .static {
+        background: #fee9e5;
+    }
+
+    .stripe {
+        color: white;
+        background: repeating-linear-gradient(
+          -55deg,
+          #fee9e5,
+          #fee9e5 10px,
+          #fff4f2 10px,
+          #fff4f2 20px
+        );
+    }
+    
+    .bg1::after {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('../images/001.jpg');
+    }
+    
+    /* TEXT STYLES */
+    .title {
+        font-family: 'Sacramento', cursive;
+        font-weight: normal;
+        font-size: 290px !important;
+        color: #62505b;
+    }
+    .heading {
+        font-family: 'Sacramento', cursive;
+        font-weight: normal;
+        font-size: 65px !important;
+        color: #80554D;
+    }
+    
+    p {
+        font-size: 20px;
+        color: #898989;
+    }
+    
+    .text-white {
+        color: #FAF9FE ;
+    }
+    
+    .ls {
+        margin: 0, auto;
+        letter-spacing: 4px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 33%;
+        text-align: center;
+    }
+    
+    .description {
+        font-family: 'Roboto Slab', serif !important;
+        font-weight: normal;
+        font-size: 14px;
+    }
+    
+    .text-center {
+        text-align: center;
+    }
+
+    .progress {
+        font-family: 'Roboto Slab', serif !important;
+        font-size: 52px;
+        font-weight: bolder;
+        margin: -10px 0 20px 0;
+    }
+    
+    /*custom button*/
+    .btn-more{
+        border: 5px solid #FAF9FE;
+        background: #FAF9FE;
+        color: #3A3D42;
+        padding: 30px 143px;
+        /* font-size: 20px; */
+        font-weight: bold;
+        transition: background-color 0.1s ease, color 0.1s ease;
+        cursor: pointer;
+    }
+    
+    .btn-more:hover,
+    .btn-more:active{
+      background-color: #3A3D42;
+      color: #FAF9FE;
+    }
+
+
+    /* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 90px !important;
+    }
+    .ls {
+        font-size: 13px !important;
+    }
+  }
