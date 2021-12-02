@@ -31,3 +31,24 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+
+## Github Pages Deployment
+
+### `npm install gh-pages --save-dev`
+
+Edit `package.json`:
+
+1. add `"homepage": "https://myusername.github.io/guide-react-gh-pages"`
+
+1. update exisiting scripts 
+    >"scripts": {
+    >  "predeploy": "npm run build",
+    >  "deploy": "gh-pages -d build",
+    >  "start": "react-scripts start",
+    >  "build": "react-scripts build",
+    >}
+
+1. deploy the app
+
+### `npm install gh-pages --save-dev`
