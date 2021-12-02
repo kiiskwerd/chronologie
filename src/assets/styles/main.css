@@ -27,7 +27,7 @@ main {
 .placeholder {
   height: 20px;
   font-size: smaller;
-  text-align:center;
+  text-align: center;
 }
 
 .parallax {
@@ -238,16 +238,19 @@ p {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  p, h3, footer {
+  p,
+  h3,
+  footer {
     font-size: smaller;
   }
   .container {
     padding: 0;
   }
-  .box-1 div, .box-2 div {
+  .box-1 div,
+  .box-2 div {
     padding: 3px 8px;
     margin: 2px;
-}
+  }
   .title {
     font-size: 100px !important;
   }
@@ -261,9 +264,10 @@ p {
   .testimonial-container {
     flex-direction: column;
   }
-  .testimonial-1, .testimonial-2  {
+  .testimonial-1,
+  .testimonial-2 {
     border-radius: 10px;
-}
+  }
   .btn-more {
     padding: 14px 95px;
   }
@@ -271,11 +275,11 @@ p {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-    .testimonial-container {
-        flex-direction: column;
-      }
-      .testimonial-1, .testimonial-2  {
-        border-radius: 10px;
-    }
+  .testimonial-container {
+    flex-direction: column;
+  }
+  .testimonial-1,
+  .testimonial-2 {
+    border-radius: 10px;
+  }
 }
-

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Button } from "react-bootstrap";
 import { ModalGallery } from "./ModalGallery";
 import "../assets/styles/main.css";
 
@@ -83,7 +82,7 @@ export const Landing = () => {
           </div>
         </section>
         <footer className="placeholder">
-          © Copyright 2021  |  All rights reserved  |  karencabingatan@gmail.com
+          © Copyright 2021 | All rights reserved | karencabingatan@gmail.com
         </footer>
       </main>
     </div>

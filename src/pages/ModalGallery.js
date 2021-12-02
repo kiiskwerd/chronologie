@@ -12,7 +12,6 @@ import { Button } from "react-bootstrap";
 
 export const ModalGallery = ({ handleClose, show }) => {
   const showHideClassName = show ? "modal display-block" : "modal display-none";
-  // const img1 = require('../assets/images/logo00.png')
 
   return (
     <div className={showHideClassName}>
