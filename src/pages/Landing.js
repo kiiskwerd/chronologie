@@ -70,7 +70,7 @@ export const Landing = () => {
                       <a
                         className="btn-more"
                         href="https://www.behance.net/karencabingatan"
-                        target="_blank"
+                        target="_blank" rel="noreferrer"
                       >
                         view more
                       </a>
