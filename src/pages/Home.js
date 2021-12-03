@@ -9,7 +9,7 @@ export class Home extends React.Component {
       <>
         <Router>
           <Routes>
-            <Route exact path="/chronologie" element={<Landing />} />
+            <Route exact path="/" element={<Landing />} />
             <Route
               path="/gallery"
               element={
