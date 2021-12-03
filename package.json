@@ -1,8 +1,8 @@
 {
   "name": "chronologie",
+  "homepage": "https://kiiskwerd.github.io/chronologie",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kiiskwerd.github.io/chronologie",
   "dependencies": {
     "@craco/craco": "^6.4.2",
     "@testing-library/jest-dom": "^5.15.1",
